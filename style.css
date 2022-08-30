@@ -1,0 +1,104 @@
+/*
+Theme Name: Flatsome Child
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.0
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+
+
+.footer-nav--row{
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.footer-nav{
+    flex: 1 0 auto;
+}
+
+.footer-nav--row .footer-nav{
+    padding: 0 15px;
+}
+
+.footer-nav--row .footer-nav li{
+    border-top: none;
+}
+
+.footer-nav--row .footer-nav li a:hover{
+    color: #8dbff0!important;
+}
+
+.footer-nav ul.menu>li>a{
+    padding: 2px 0;
+}
+
+.footer-nav--title{
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 0 15px;
+}
+
+.footer-nav--title:after{
+    content: '';
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 1em 0 1em;
+    width: 100%;
+    max-width: 30px;
+    position: absolute;
+    top: 20px;
+}
+
+#menu-kategorii-magazina .current-menu-item>a{
+    color: #000;
+    font-weight: bolder;
+}
+
+#menu-kategorii-magazina .current-menu-item > ul.sub-menu{
+    display: block!important;
+}
+
+#menu-kategorii-magazina .current-menu-parent > ul.sub-menu{
+    display: block!important;
+}
+
+.wpap-loadmore-wrapper .wpap-loadmore-button{
+    background:#8dbff0!important;
+    color: #fff;
+    box-shadow: none!important;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wpap-loadmore-wrapper .wpap-loadmore-button:hover{
+    background: rgba(247,155,130,0.96)!important;
+}
+
+
+@media only screen and (max-width: 48em) {
+/*************** ADD MOBILE ONLY CSS HERE  ***************/
+
+
+}
+@media only screen and (max-width: 1180px) {
+    .footer-nav--row{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .footer-nav--row{
+        flex-wrap: wrap;
+    }
+    .footer-nav--row .footer-nav{
+        margin-bottom: 0;
+    }
+    .footer-nav--row .footer-nav:last-of-type{
+        margin-bottom: 1.5em;
+    }
+}
